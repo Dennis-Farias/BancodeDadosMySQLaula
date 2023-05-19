@@ -10,6 +10,5 @@ alter table endereco add constraint fk_endereco_cli_id foreign key (cli_id) refe
 
 alter table entrega add constraint fk_entrega_ped_id foreign key (ped_id) references pedidos(ped_id);
 
-alter table entrega add constraint fk_entrega_cli_id foreign key (cli_id) references clientes(cli_id);
+alter table entrega add constraint fk_entrega_cli_id foreign key (cli_id) references endereco(cli_id);
 
-describe pedidos;

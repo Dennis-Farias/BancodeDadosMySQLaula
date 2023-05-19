@@ -6,6 +6,6 @@ use loja;
 
 select database(); 
 
-drop database fatec;
+drop database loja;
 
 

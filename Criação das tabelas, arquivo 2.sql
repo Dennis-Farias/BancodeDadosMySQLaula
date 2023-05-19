@@ -69,4 +69,3 @@ ent_data date not null,
 ent_status varchar(30),
 primary key (ped_id, cli_id)
 );
-
