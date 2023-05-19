@@ -20,9 +20,9 @@ primary key (cli_id)
 
 create table if not exists pedidos(
 ped_id int not null auto_increment,
-cli_id int,
+cli_id int not null,
 ped_status varchar(30) not null,
-fg_id int,
+fg_id int not null,
 ped_nf int not null,
 ped_numero_serie_nf smallint not null,
 primary key (ped_id)
@@ -45,15 +45,15 @@ primary key (adm_id)
 );
 
 create table if not exists produtos_pedidos(
-prd_id int,
-ped_id int,
+prd_id int not null,
+ped_id int not null,
 prd_ped_quant int not null,
 prd_ped_valor decimal(8,2) not null,
 primary key (prd_id, ped_id) 
 );
 
 create table if not exists endereco(
-cli_id int,
+cli_id int not null,
 end_cidade varchar(50) not null,
 end_estado varchar(50) not null,
 end_bairro varchar(50) not null,
@@ -63,9 +63,10 @@ primary key (cli_id)
 );
 
 create table if not exists entrega(
-ped_id int,
-cli_id int,
+ped_id int not null,
+cli_id int not null,
 ent_data date not null,
 ent_status varchar(30),
 primary key (ped_id, cli_id)
 );
+
