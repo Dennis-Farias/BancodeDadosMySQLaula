@@ -3,7 +3,7 @@ prd_id int not null auto_increment,
 prd_nome varchar(50) not null,
 prd_descricao varchar(80) not null,
 prd_estoque int not null,
-prd_tamanho varchar(2) not null,
+prd_tamanho varchar(10) not null,
 prd_preco decimal(8,2) not null,
 primary key (prd_id) 
 );
@@ -23,8 +23,8 @@ ped_id int not null auto_increment,
 cli_id int not null,
 ped_status varchar(30) not null,
 fg_id int not null,
-ped_nf int not null,
-ped_numero_serie_nf smallint not null,
+ped_nf varchar(20) not null,
+ped_numero_serie_nf varchar(20) not null,
 primary key (ped_id)
 );
 
@@ -67,5 +67,7 @@ ped_id int not null,
 cli_id int not null,
 ent_data date not null,
 ent_status varchar(30),
-primary key (ped_id, cli_id)
+primary key (ped_id)
 );
+
+drop table administrador, endereco, entrega, produtos_pedidos, produtos, pedidos, formas_de_pagamento, clientes;
