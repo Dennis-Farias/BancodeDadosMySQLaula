@@ -52,8 +52,6 @@ prd_ped_valor decimal(8,2) not null,
 primary key (prd_id, ped_id) 
 );
 
-drop table endereco;
-
 create table if not exists endereco(
 end_id int not null auto_increment,
 cli_id int not null,
