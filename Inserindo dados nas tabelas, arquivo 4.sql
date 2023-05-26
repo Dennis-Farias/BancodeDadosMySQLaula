@@ -84,12 +84,13 @@ VALUES (1, 1, '2023-05-01', 'Pendente'),
 
 INSERT INTO endereco (cli_id, end_cidade, end_estado, end_bairro, end_num, end_logradouro)
 VALUES (1, 'São Paulo', 'SP', 'Centro', '123', 'Rua A'),
-       (2, 'Rio de Janeiro', 'RJ', 'Copacabana', '456', 'Avenida B'),
+       (1, 'Rio de Janeiro', 'RJ', 'Copacabana', '456', 'Avenida B'),
        (3, 'Belo Horizonte', 'MG', 'Savassi', '789', 'Rua C'),
        (4, 'Porto Alegre', 'RS', 'Moinhos de Vento', '1011', 'Avenida D'),
        (5, 'Salvador', 'BA', 'Barra', '1213', 'Rua E'),
-       (6, 'Curitiba', 'PR', 'Batel', '1415', 'Avenida F'),
-       (7, 'Recife', 'PE', 'Boa Viagem', '1617', 'Rua G'),
+       (5, 'Curitiba', 'PR', 'Batel', '1415', 'Avenida F'),
+       (5, 'Recife', 'PE', 'Boa Viagem', '1617', 'Rua G'),
        (8, 'Fortaleza', 'CE', 'Meireles', '1819', 'Avenida H'),
        (9, 'Brasília', 'DF', 'Asa Sul', '2021', 'Rua I'),
        (10, 'Manaus', 'AM', 'Ponta Negra', '2223', 'Avenida J');
+       

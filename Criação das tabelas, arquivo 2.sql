@@ -52,14 +52,17 @@ prd_ped_valor decimal(8,2) not null,
 primary key (prd_id, ped_id) 
 );
 
+drop table endereco;
+
 create table if not exists endereco(
+end_id int not null auto_increment,
 cli_id int not null,
 end_cidade varchar(50) not null,
 end_estado varchar(50) not null,
 end_bairro varchar(50) not null,
 end_num int not null,
 end_logradouro varchar(50) not null,
-primary key (cli_id) 
+primary key (end_id) 
 );
 
 create table if not exists entrega(
