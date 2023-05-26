@@ -9,7 +9,7 @@ VALUES ('Camiseta', 'Camiseta de algodão', 50, 'M', 29.99),
        ('Jaqueta', 'Jaqueta de couro', 5, 'GG', 129.99),
        ('Saia', 'Saia rodada', 12, 'M', 24.99),
        ('Bolsa', 'Bolsa de couro', 8, 'Único', 69.99);
-
+       
 INSERT INTO clientes (cli_nome, cli_telefone, cli_e_mail, cli_senha, cli_cpf)
 VALUES ('João Silva', '123456789', 'joao.silva@example.com', 'senha123', '12345678901'),
        ('Maria Santos', '987654321', 'maria.santos@example.com', 'senha456', '98765432102'),
@@ -63,24 +63,25 @@ VALUES (1, 1, 2, 50.00),
        (2, 1, 1, 25.00),
        (3, 2, 3, 75.00),
        (4, 2, 4, 100.00),
-       (5, 3, 2, 60.00),
+       (1, 3, 2, 60.00),
        (6, 3, 1, 30.00),
-       (7, 4, 5, 125.00),
+       (1, 4, 5, 125.00),
        (8, 4, 3, 90.00),
        (9, 5, 2, 70.00),
        (10, 5, 1, 40.00);
        
-INSERT INTO entrega (ped_id, cli_id, ent_data, ent_status)
-VALUES (1, 1, '2023-05-01', 'Pendente'),
-       (2, 2, '2023-05-02', 'Em andamento'),
-       (3, 3, '2023-05-03', 'Concluída'),
-       (4, 4, '2023-05-04', 'Pendente'),
-       (5, 5, '2023-05-05', 'Em andamento'),
-       (6, 1, '2023-05-06', 'Concluída'),
-       (7, 2, '2023-05-07', 'Pendente'),
-       (8, 3, '2023-05-08', 'Em andamento'),
-       (9, 4, '2023-05-09', 'Concluída'),
-       (10, 5, '2023-05-10', 'Pendente');
+INSERT INTO entrega (ped_id, cli_id, ent_data, ent_status, end_id)
+VALUES (1, 1, '2023-05-01', 'Pendente', 1),
+       (2, 2, '2023-05-02', 'Em andamento', 2),
+       (3, 3, '2023-05-03', 'Concluída', 3),
+       (4, 4, '2023-05-04', 'Pendente', 4),
+       (5, 5, '2023-05-05', 'Em andamento', 5),
+       (6, 1, '2023-05-06', 'Concluída', 1),
+       (7, 2, '2023-05-07', 'Pendente', 2),
+       (8, 3, '2023-05-08', 'Em andamento', 3),
+       (9, 4, '2023-05-09', 'Concluída', 4),
+       (10, 5, '2023-05-10', 'Pendente', 5);
+
 
 INSERT INTO endereco (cli_id, end_cidade, end_estado, end_bairro, end_num, end_logradouro)
 VALUES (1, 'São Paulo', 'SP', 'Centro', '123', 'Rua A'),

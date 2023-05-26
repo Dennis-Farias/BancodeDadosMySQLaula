@@ -68,6 +68,7 @@ ped_id int not null,
 cli_id int not null,
 ent_data date not null,
 ent_status varchar(30),
+end_id int not null,
 primary key (ped_id)
 );
 
