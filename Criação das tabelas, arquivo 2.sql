@@ -65,7 +65,6 @@ primary key (end_id)
 
 create table if not exists entrega(
 ped_id int not null,
-cli_id int not null,
 ent_data date not null,
 ent_status varchar(30),
 end_id int not null,
