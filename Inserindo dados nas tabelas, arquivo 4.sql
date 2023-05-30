@@ -80,18 +80,6 @@ VALUES (1, 1, 2, 50.00),
        (9, 5, 2, 70.00),
        (10, 5, 1, 40.00);
        
-INSERT INTO entrega (ped_id, ent_data, ent_status, end_id)
-VALUES (1, '2022-03-10', 'Pendente', 1),
-       (2, '2022-06-20', 'Em andamento', 2),
-       (3, '2022-09-15', 'Concluída', 3),
-       (4, '2023-02-28', 'Pendente', 4),
-       (5, '2023-05-12', 'Em andamento', 5),
-       (6, '2023-08-05', 'Concluída', 1),
-       (7, '2023-11-21', 'Pendente', 2),
-       (8, '2024-04-03', 'Em andamento', 3),
-       (9, '2024-07-18', 'Concluída', 4),
-       (10, '2024-10-30', 'Pendente', 5);
-       
 INSERT INTO endereco (cli_id, end_cidade, end_estado, end_bairro, end_num, end_logradouro)
 VALUES (1, 'São Paulo', 'SP', 'Centro', '123', 'Rua A'),
        (2, 'Rio de Janeiro', 'RJ', 'Copacabana', '456', 'Avenida B'),
@@ -113,3 +101,15 @@ VALUES (1, 'São Paulo', 'SP', 'Centro', '123', 'Rua A'),
        (3, 'São Paulo', 'SP', 'Vila Madalena', '789', 'Rua C'),
        (4, 'Belo Horizonte', 'MG', 'Savassi', '456', 'Avenida D'),
        (5, 'Porto Alegre', 'RS', 'Moinhos de Vento', '789', 'Rua E');
+       
+INSERT INTO entrega (ped_id, ent_data, ent_status, end_id)
+VALUES (1, '2022-03-10', 'Pendente', 1),
+       (2, '2022-06-20', 'Em andamento', 2),
+       (3, '2022-09-15', 'Concluída', 3),
+       (4, '2023-02-28', 'Pendente', 4),
+       (5, '2023-05-12', 'Em andamento', 5),
+       (6, '2023-08-05', 'Concluída', 1),
+       (7, '2023-11-21', 'Pendente', 2),
+       (8, '2024-04-03', 'Em andamento', 3),
+       (9, '2024-07-18', 'Concluída', 4),
+       (10, '2024-10-30', 'Pendente', 5);

@@ -30,8 +30,7 @@ select ped_id, fg_id from pedidos where fg_id = 1 or fg_id = 2;
 
 select end_cidade from endereco where not end_cidade = 'Rio de Janeiro' group by end_cidade;
 
-select cli_nome from clientes where cli_nome like 'a_a%';
-
-select concat("O pedido ", ped_id, " do cliente ", cli_id, " está ", ent_status) as 'Situação dos pedidos' from entrega where cli_id >= 3;
+select concat("O pedido ", ped_id, " que vai para ", endereco.end_cidade, " está ", ent_status) as 'Situação dos pedidos' from entrega inner join endereco 
+on endereco.end_id = entrega.end_id;
 
 select cli_nome from clientes limit 0, 10;
