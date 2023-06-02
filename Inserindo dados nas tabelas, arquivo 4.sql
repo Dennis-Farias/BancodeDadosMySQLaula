@@ -86,22 +86,12 @@ VALUES (1, 'São Paulo', 'SP', 'Centro', '123', 'Rua A'),
        (3, 'São Paulo', 'SP', 'Vila Madalena', '789', 'Rua C'),
        (4, 'Belo Horizonte', 'MG', 'Savassi', '456', 'Avenida D'),
        (5, 'Porto Alegre', 'RS', 'Moinhos de Vento', '789', 'Rua E'),
-       (1, 'São Paulo', 'SP', 'Centro', '123', 'Rua A'),
-       (2, 'Rio de Janeiro', 'RJ', 'Copacabana', '456', 'Avenida B'),
-       (3, 'São Paulo', 'SP', 'Vila Madalena', '789', 'Rua C'),
-       (4, 'Belo Horizonte', 'MG', 'Savassi', '456', 'Avenida D'),
-       (5, 'Porto Alegre', 'RS', 'Moinhos de Vento', '789', 'Rua E'),
-       (1, 'São Paulo', 'SP', 'Centro', '123', 'Rua A'),
-       (2, 'Rio de Janeiro', 'RJ', 'Copacabana', '456', 'Avenida B'),
-       (3, 'São Paulo', 'SP', 'Vila Madalena', '789', 'Rua C'),
-       (4, 'Belo Horizonte', 'MG', 'Savassi', '456', 'Avenida D'),
-       (5, 'Porto Alegre', 'RS', 'Moinhos de Vento', '789', 'Rua E'),
-       (1, 'São Paulo', 'SP', 'Centro', '123', 'Rua A'),
-       (2, 'Rio de Janeiro', 'RJ', 'Copacabana', '456', 'Avenida B'),
-       (3, 'São Paulo', 'SP', 'Vila Madalena', '789', 'Rua C'),
-       (4, 'Belo Horizonte', 'MG', 'Savassi', '456', 'Avenida D'),
-       (5, 'Porto Alegre', 'RS', 'Moinhos de Vento', '789', 'Rua E');
-       
+       (1, 'São Paulo', 'SP', 'Centro', '321', 'Rua B'),
+       (2, 'Rio de Janeiro', 'RJ', 'Copacabana', '55', 'Avenida D'),
+       (3, 'São Paulo', 'SP', 'Vila Madalena', '111', 'Rua A'),
+       (4, 'Belo Horizonte', 'MG', 'Savassi', '654', 'Avenida C'),
+       (5, 'Porto Alegre', 'RS', 'Moinhos de Vento', '987', 'Rua F');
+	
 INSERT INTO entrega (ped_id, ent_data, ent_status, end_id)
 VALUES (1, '2022-03-10', 'Pendente', 1),
        (2, '2022-06-20', 'Em andamento', 2),

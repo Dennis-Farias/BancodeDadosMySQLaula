@@ -1,5 +1,3 @@
-select * from formas_de_pagamento;
-
 select prd_ped_valor from produtos_pedidos;
 
 select distinct end_estado from endereco;
@@ -13,8 +11,6 @@ select cli_nome from clientes where cli_nome like '%Santos';
 select cli_nome from clientes where cli_nome like 'a_a%';
 
 select ped_id, ent_status from entrega where ent_status in ('Pendente', 'Em andamento');
-
-select ped_id, fg_id from pedidos where fg_id = 1 or fg_id = 2;
 
 select end_cidade from endereco where not end_cidade = 'Rio de Janeiro' group by end_cidade;
 
@@ -31,4 +27,9 @@ select avg(prd_preco) from produtos where prd_tamanho = 'M';
 
 select sum(prd_preco) from produtos where prd_preco > 50;
 
-select count(*) as 'Quantidade de pedidos cancelados' from pedidos where ped_status = 'Cancelado';
+select count(ped_status) as 'Quantidade de pedidos cancelados' from pedidos where ped_status = 'Cancelado';
+
+select ped_id, formas_de_pagamento.fg_tipo from pedidos inner join formas_de_pagamento on pedidos.fg_id = formas_de_pagamento.fg_id 
+where formas_de_pagamento.fg_tipo = 'Cartão de Crédito' or formas_de_pagamento.fg_tipo = 'Boleto Bancário';
+
+select end_cidade, end_num, clientes.cli_nome from endereco inner join clientes on clientes.cli_id = endereco.cli_id;
