@@ -1,15 +1,3 @@
-START TRANSACTION; 
-	DELETE FROM administrador; 
-    INSERT INTO administrador(adm_nome, adm_cpf, adm_e_mail, adm_senha) 
-		VALUES ('Dennis de Sousa Farias', '01234567890', 'dennisfarias@example.com', 'senha123');
-	SELECT * FROM administrador;
-ROLLBACK;
-
-START TRANSACTION; 
-	UPDATE administrador SET adm_senha = 'senha123' WHERE adm_id = 10;
-	SELECT * FROM administrador;
-ROLLBACK;
-
 select * from formas_de_pagamento;
 
 select prd_ped_valor from produtos_pedidos;
