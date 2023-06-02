@@ -71,4 +71,4 @@ end_id int not null,
 primary key (ped_id)
 );
 
-drop table administrador, endereco, entrega, produtos_pedidos, produtos, pedidos, formas_de_pagamento, clientes;
+-- drop table administrador, endereco, entrega, produtos_pedidos, produtos, pedidos, formas_de_pagamento, clientes;
