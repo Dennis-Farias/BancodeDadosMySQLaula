@@ -34,3 +34,13 @@ select concat("O pedido ", ped_id, " que vai para ", endereco.end_cidade, " estÃ
 on endereco.end_id = entrega.end_id;
 
 select cli_nome from clientes limit 0, 10;
+
+select min(ent_data) from entrega;
+
+select max(prd_preco) from produtos;
+
+select avg(prd_preco) from produtos where prd_tamanho = 'M';
+
+select sum(prd_preco) from produtos where prd_preco > 50;
+
+select count(*) as 'Quantidade de pedidos cancelados' from pedidos where ped_status = 'Cancelado';
